@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; /* For making relative unit calculations easier. 1rem(16px) * 62.5% = 10px */
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    height: 100vh;
+    color: #333;
+    background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 100rem;
+    height: 60rem;
+    background-color: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(200px);
+    filter: blur();
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.player {
+    width: 50%;
+    text-align: center;
+}
+
+.playerWins {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+
+.active {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.playerName {
+    margin-top: 7rem;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.playerScore {
+    font-size: 7rem;
+    color: #c7365f;
+    margin-top: 5rem;
+}
+
+.current {
+    background-color: #c7365f;
+    margin: 14rem 15rem 0 15rem;
+    border-radius: 1rem;
+    height: 10rem;
+    display: grid;
+    grid-template-rows: 30% 30% 40%;
+}
+
+.currentScore {
+    grid-row-end: 3;
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    margin-top: 1.3rem;
+}
+
+.currentText {
+    margin-top: 1.2rem;
+    grid-row-end: 2;
+    color: #DDDDDD;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.dice {
+    position: absolute;
+    width: 8.5rem;
+    height: 8.5rem;
+    left: 50%;
+    top: 17rem;
+    transform: translate(-50%);
+}
+
+.winner {
+    position: absolute;
+    font-family: 'Nunito', sans-serif;
+    font-size: 3rem;
+    left: 50%;
+    top: 17rem;
+    transform: translate(-50%);
+    background-color: #FFFFFF;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.btn {
+    position: absolute;
+    height: 4rem;
+    width: 15rem;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(200px);
+    filter: blur();
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.btn:active {
+    transform: translate(-50%, 3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.reset {
+    top: 4rem;
+}
+
+.roll {
+    top: 44rem;
+}
+
+.hold {
+    width: 10rem;
+    top: 50rem;
+}
+
+.hidden {
+    display: none;
+}
